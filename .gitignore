@@ -1,0 +1,12 @@
+# local mirror root and everything the tool writes there
+data/
+*.part
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+.venv/
