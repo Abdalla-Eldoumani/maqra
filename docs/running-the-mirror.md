@@ -30,7 +30,7 @@ python -m maqra status
 
 `--root` (or `MAQRA_ROOT`) moves the data root. `--dry-run` on the publish commands prints what would happen.
 
-On Windows, `scripts\windows\mirror.cmd`, `verify.cmd`, `extras.cmd`, and `status.cmd` run the same commands from a double-click and keep the window open at the end. They pick `py -3` when the Python launcher is installed and `python` otherwise.
+On Windows, `scripts\windows\mirror.cmd`, `verify.cmd`, `extras.cmd`, `status.cmd`, and `commit-manifests.cmd` run the same commands from a double-click and keep the window open at the end. They pick `py -3` when the Python launcher is installed and `python` otherwise.
 
 ## What a set run does
 
@@ -58,7 +58,7 @@ The bulk zips total about 86 GB and the loose fetches that follow are usually a 
 ## Publishing order
 
 1. `mirror` everything, then `verify`.
-2. Commit the 80 manifests (one file per commit) and the timing files.
+2. Commit the 80 manifests and any timing files, one file per commit: `python tools/commit_manifests.py` (or `scripts\windows\commit-manifests.cmd`), then push.
 3. `publish-github --build --cleanup` (about 102 GB of uploads with under 5 GB of scratch at any moment; `gh` resumes per asset, so re-run after any interruption). Use `package` first and drop `--build` only when you want to keep the zips.
 4. `publish-hf` (another 102 GB; `upload_large_folder` resumes per file and commits in batches).
 5. `publish-hf --index --images`.
