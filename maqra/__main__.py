@@ -149,16 +149,30 @@ def cmd_package(args: argparse.Namespace) -> int:
 
 
 def cmd_publish_github(args: argparse.Namespace) -> int:
+    """Per set: build the surah zips when asked, upload them, then delete them when asked.
+
+    With --build and --cleanup the peak scratch space is one set (under 5 GB) instead of
+    the whole archive repackaged (about 102 GB)."""
+    import shutil
+    from .package import build_surah_zips
     from .publish_github import check_auth, publish_reciter
     log = _log_factory(args.root)
     if not args.dry_run:
         check_auth()
     reciters = select(load_reciters(), args.only, args.skip)
     for r in reciters:
+        if args.build:
+            if not (args.root / "audio" / r.slug).is_dir():
+                log(f"[{r.slug}] not mirrored yet; skipping")
+                continue
+            build_surah_zips(r, args.root, args.releases, log)
         if not (args.releases / r.slug).is_dir():
             log(f"[{r.slug}] not packaged yet; skipping")
             continue
         publish_reciter(r, args.releases, log, repo=args.repo, dry_run=args.dry_run)
+        if args.cleanup and not args.dry_run:
+            shutil.rmtree(args.releases / r.slug, ignore_errors=True)
+            log(f"[{r.slug}] release files removed from {args.releases / r.slug}")
     return 0
 
 
@@ -240,6 +254,8 @@ def build_parser() -> argparse.ArgumentParser:
     _add_selection(s)
     s.add_argument("--releases", type=Path, default=DEFAULT_RELEASES)
     s.add_argument("--repo", default="Abdalla-Eldoumani/maqra")
+    s.add_argument("--build", action="store_true", help="build each set's surah zips right before uploading them")
+    s.add_argument("--cleanup", action="store_true", help="delete each set's zips after a successful upload")
     s.add_argument("--dry-run", action="store_true")
     s.set_defaults(fn=cmd_publish_github)
 
