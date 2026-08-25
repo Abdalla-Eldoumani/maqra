@@ -13,7 +13,7 @@ data/
     _upstream/                    000_checksum.md5, readmes, notes, verbatim
     _upstream/stray/              odd small files found beside the set upstream
     README.md, manifest.json      written by `publish-hf`, uploaded with the set
-  timings/_upstream/*.zip         the 30 timing zips, verbatim
+  timings/_upstream/*.zip         the 27 timing zips and their three text notes, verbatim
   images/gif|jpg|png|png-hires/   the four ayah image sets, S_A.ext
   upstream/                       recitations.js, the site pages, the site-level intro files
   tools/                          the legacy tool zips
