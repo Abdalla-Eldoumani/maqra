@@ -97,20 +97,40 @@ def mirror_timings(root: Path, workers: int, log: Log, timings_out: Path) -> dic
     return summary
 
 
-def parse_timing_zip(path: Path) -> Tuple[Dict[int, List[int]], List[str]]:
-    """Return ({surah: [ms, ...]}, warnings)."""
-    out: Dict[int, List[int]] = {}
+TIMING_NAME = re.compile(r"^(?:chapter)?(\d{1,3})([a-z])?(?:(\d{1,3})-(\d{1,3}))?\.txt$", re.I)
+NOTE_FILES = re.compile(r"^(details|source|_readme|000_readme|readme|000_disclaimer)\.txt$", re.I)
+NOTE_LIMIT = 4096
+
+
+def parse_timing_zip(path: Path) -> Tuple[Dict[int, List[int]], Dict[int, List[dict]], Dict[str, str], List[str]]:
+    """Parse one upstream timing zip.
+
+    Returns (whole, parts, notes, warnings):
+      whole: {surah: [offset, ...]} for files that cover a whole surah (001.txt, Chapter001.txt, 054.TXT)
+      parts: {surah: [{"part": "a", "ayah_range": [1, 117] or None, "segments": [...]}, ...]}
+             for recordings split into several files (002a.txt, 002a001-117.txt)
+      notes: {filename: text} for the small text files shipped beside the timings
+      warnings: entries that were neither
+    """
+    whole: Dict[int, List[int]] = {}
+    parts: Dict[int, List[dict]] = {}
+    notes: Dict[str, str] = {}
     warnings: List[str] = []
     with zipfile.ZipFile(path) as zf:
         for info in zf.infolist():
             if info.is_dir():
                 continue
             base = info.filename.replace("\\", "/").rsplit("/", 1)[-1]
-            m = re.match(r"^(\d{1,3})\.txt$", base)
+            if NOTE_FILES.match(base):
+                notes[base] = zf.read(info).decode("utf-8", errors="replace")[:NOTE_LIMIT]
+                continue
+            m = TIMING_NAME.match(base)
             if not m:
                 warnings.append(f"ignored entry {info.filename}")
                 continue
             surah = int(m.group(1))
+            part = m.group(2).lower() if m.group(2) else None
+            rng = [int(m.group(3)), int(m.group(4))] if m.group(3) else None
             text = zf.read(info).decode("utf-8", errors="replace")
             values: List[int] = []
             for line in text.splitlines():
@@ -118,39 +138,73 @@ def parse_timing_zip(path: Path) -> Tuple[Dict[int, List[int]], List[str]]:
                     continue
                 mm = TIMING_LINE.match(line)
                 if not mm:
-                    warnings.append(f"surah {surah}: non-numeric line {line.strip()!r}")
+                    warnings.append(f"{base}: non-numeric line {line.strip()!r}")
                     continue
                 values.append(int(mm.group(1)))
-            out[surah] = values
-    return out, warnings
+            if part is None:
+                if surah in whole:
+                    warnings.append(f"{base}: duplicate whole-surah file for surah {surah}; kept the first")
+                    continue
+                whole[surah] = values
+            else:
+                parts.setdefault(surah, []).append({"part": part, "ayah_range": rng, "segments": values})
+    for lst in parts.values():
+        lst.sort(key=lambda d: d["part"])
+    return whole, parts, notes, warnings
 
 
-def convert_timings(src_dir: Path, out_dir: Path, log: Log) -> List[dict]:
+TIMING_MEANING = (
+    "Offsets in milliseconds into the full-surah recording. Each value is where one segment ends, in order. "
+    "Most files carry one more segment than the surah has ayahs: the first segment is the isti'adhah and basmala "
+    "that opens the recording. everyayah.com's own readme for the Ash-Shatri set says so: the mp3 files include "
+    "the basmala, so delete the first line (about 8000 milliseconds) to make the numbering line up with the ayahs. "
+    "Compare segments against ayahs per surah before relying on any file: extra_segments is that difference, +1 for an opening basmala segment, 0 for none, about one extra per ayah in the sets that interleave a spoken translation, negative where the upstream file stops early. Where a recording was split into parts "
+    "(002a, 002b, with or without an ayah range in the name), offsets are relative to that part's audio file. "
+    "everyayah.com's disclaimer: many mp3s were fixed by hand after splitting, so these will not reproduce the "
+    "published ayah files exactly."
+)
+
+
+def convert_timings(src_dir: Path, out_dir: Path, log: Log, counts: Optional[Dict[int, int]] = None) -> List[dict]:
     """Convert every timing zip into one JSON file. Returns the index written."""
+    from .registry import ayah_counts
+    counts = counts or ayah_counts()
     out_dir.mkdir(parents=True, exist_ok=True)
     index: List[dict] = []
     for zp in sorted(src_dir.glob("*.zip")):
         try:
-            data, warnings = parse_timing_zip(zp)
+            whole, parts, notes, warnings = parse_timing_zip(zp)
         except zipfile.BadZipFile as exc:
             log(f"[timings] {zp.name}: unreadable ({exc})")
             continue
+        if not whole and not parts:
+            log(f"[timings] {zp.name}: no timing files inside; skipped ({len(warnings)} entries ignored)")
+            index.append({"source_zip": zp.name, "skipped": True, "reason": "no timing files inside"})
+            continue
         stem = re.sub(r"[^A-Za-z0-9]+", "-", zp.stem).strip("-").lower()
+        surahs = {
+            str(k): {"ayahs": counts.get(k), "segments": v, "extra_segments": (len(v) - counts[k]) if k in counts else None}
+            for k, v in sorted(whole.items())
+        }
         doc = {
-            "schema_version": 1,
+            "schema_version": 2,
             "source_zip": zp.name,
             "source_url": file_url("timings_files", zp.name),
             "unit": "milliseconds",
-            "meaning": "For each surah, the offsets in the full-surah recording at which successive ayahs end, one per line in the upstream text file, in order. everyayah.com's disclaimer: many mp3s were fixed by hand after splitting, so these will not reproduce the published ayah files exactly.",
+            "meaning": TIMING_MEANING,
             "license_note": "(C) VerseByVerseQuran.com. Upstream requires a link back to everyayah.com from any product or web site that uses these timings.",
             "converted_at": _now(),
-            "surahs": {str(k): v for k, v in sorted(data.items())},
+            "surahs_covered": sorted(set(whole) | set(parts)),
+            "surahs": surahs,
+            "parts": {str(k): v for k, v in sorted(parts.items())},
+            "upstream_notes": notes,
             "warnings": warnings,
         }
         target = out_dir / f"{stem}.json"
         target.write_text(json.dumps(doc, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
-        index.append({"file": target.name, "source_zip": zp.name, "surahs": len(data), "warnings": len(warnings)})
-        log(f"[timings] {zp.name} -> {target.name}: {len(data)} surahs, {len(warnings)} warnings")
+        covered = len(doc["surahs_covered"])
+        index.append({"file": target.name, "source_zip": zp.name, "surahs": covered, "split_surahs": len(parts), "warnings": len(warnings)})
+        log(f"[timings] {zp.name} -> {target.name}: {covered} surahs ({len(parts)} split into parts), {len(warnings)} warnings")
     return index
 
 
