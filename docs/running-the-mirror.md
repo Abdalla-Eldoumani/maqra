@@ -3,7 +3,7 @@
 ## Requirements
 
 - Python 3.10 or newer. The mirror, verify, package, and extras commands use the standard library only.
-- About 110 GB free for the full archive: 102 GB of ayah files plus one bulk zip in flight at a time (up to 4 GB) and the per-surah release zips if you build them (another 102 GB, same bytes repackaged; delete `data/releases` after publishing if space is tight).
+- About 110 GB free for the full archive: 102 GB of ayah files plus one bulk zip in flight at a time (up to 4 GB). Building every set's release zips up front would take another 102 GB; `publish-github --build --cleanup` avoids that by building and deleting one set at a time.
 - A network connection that can reach `everyayah.com` directly. Corporate and sandbox proxies that block it will fail the first listing request with a clear error.
 - For publishing: `huggingface_hub` (`pip install huggingface_hub`) and a Hugging Face token in the `HF_TOKEN` environment variable or from `hf auth login`; the GitHub CLI `gh`, logged in with `gh auth login`. No token is ever written to a file in this project.
 
@@ -24,6 +24,7 @@ python -m maqra package                       # data/releases/<slug>/001.zip ...
 python -m maqra publish-hf --only alafasy     # upload sets to Hugging Face
 python -m maqra publish-hf --index --images   # the registry dataset and the images dataset
 python -m maqra publish-github --only alafasy # create releases and upload assets
+python -m maqra publish-github --build --cleanup # build, upload, and delete each set's zips in turn
 python -m maqra status
 ```
 
@@ -58,7 +59,7 @@ The bulk zips total about 86 GB and the loose fetches that follow are usually a 
 
 1. `mirror` everything, then `verify`.
 2. Commit the 80 manifests (one file per commit) and the timing files.
-3. `package`, then `publish-github` (about 102 GB of uploads; `gh` resumes per asset, so re-run after any interruption).
+3. `publish-github --build --cleanup` (about 102 GB of uploads with under 5 GB of scratch at any moment; `gh` resumes per asset, so re-run after any interruption). Use `package` first and drop `--build` only when you want to keep the zips.
 4. `publish-hf` (another 102 GB; `upload_large_folder` resumes per file and commits in batches).
 5. `publish-hf --index --images`.
 6. Update `docs/reciters.md` if the registry changed: `python tools/build_reciters_doc.py`.
