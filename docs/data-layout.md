@@ -66,19 +66,25 @@ Sets use canonical slugs instead of upstream folder names because the upstream n
 
 ## Timings
 
-`timings/<set>.json`, one per upstream zip, written by `maqra extras --timings`:
+`timings/<set>.json`, one per upstream zip, written by `maqra extras --timings` (26 sets; one upstream zip holds loose MP3s rather than timings and is skipped with a reason in the extras report):
 
 ```json
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source_zip": "Husary_Timings.zip",
   "unit": "milliseconds",
-  "surahs": {"1": [6054, 15993, 28555, 44632, 66760, 85974, 105342], "2": ["…"]},
+  "surahs_covered": [1, 2, "..."],
+  "surahs": {"1": {"ayahs": 7, "segments": [11705, 18048, 22513, 27115, 33956, 39337, 54260], "extra_segments": 0},
+             "2": {"ayahs": 286, "segments": ["..."], "extra_segments": 1}},
+  "parts": {"2": [{"part": "a", "ayah_range": [1, 117], "segments": ["..."]}]},
+  "upstream_notes": {"details.txt": "..."},
   "warnings": []
 }
 ```
 
-The file stem is the zip name lowercased with runs of non-alphanumerics collapsed to a hyphen. The timing sets are not keyed by slug because upstream names them by reciter, not by bitrate, and one timing set applies to every bitrate of that recording.
+Each value is where one segment of the full-surah recording ends. `extra_segments` is segments minus ayahs: +1 means the recording opens with the isti'adhah and basmala as its own segment (everyayah.com's own readme for the Ash-Shatri set says to drop that first line, about 8000 ms, to make the numbering match the ayahs); 0 means no intro segment; about one extra per ayah marks the two sets that interleave a spoken translation; negative means the upstream file stops early. `parts` carries recordings that upstream split into several audio files (`002a.txt`, `002b118-220.txt`), with offsets relative to each part. The upstream naming variants (`001.txt`, `054.TXT`, `Chapter001.txt`, `002a.txt`, `002a001-117.txt`) all fold into this one shape.
+
+The file stem is the zip name lowercased with runs of non-alphanumerics collapsed to a hyphen. Timing sets are not keyed by slug because upstream names them by reciter, not by bitrate, and one timing set applies to every bitrate of that recording.
 
 ## Registry fields
 
