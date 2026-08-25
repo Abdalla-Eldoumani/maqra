@@ -1,0 +1,2404 @@
+{
+  "$schema_version": 1,
+  "generated_from": "manual survey of https://everyayah.com/data/ on 2026-08-25",
+  "ayah_file_pattern": "SSSAAA.mp3 (surah 3 digits, ayah 3 digits); AAA=000 is the basmala or isti'adhah intro file where a folder has one",
+  "count": 80,
+  "reciters": [
+    {
+      "slug": "abdulsamad-quranexplorer-64kbps",
+      "name": "Abdul Basit Abdus-Samad (QuranExplorer.com edition)",
+      "reciter_key": "abdul-basit",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "AbdulSamad_64kbps_QuranExplorer.Com",
+      "source_url": "https://everyayah.com/data/AbdulSamad_64kbps_QuranExplorer.Com/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1628,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Upstream readme: errors reported from Surah 2 ayah 22 onward.",
+      "github_release_tag": "abdulsamad-quranexplorer-64kbps",
+      "huggingface_repo": "maqra-project/abdulsamad-quranexplorer-64kbps"
+    },
+    {
+      "slug": "abdul-basit-mujawwad-128kbps",
+      "name": "Abdul Basit Abdus-Samad, Mujawwad",
+      "reciter_key": "abdul-basit",
+      "style": "mujawwad",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Abdul_Basit_Mujawwad_128kbps",
+      "source_url": "https://everyayah.com/data/Abdul_Basit_Mujawwad_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "glitches",
+        "merged",
+        "new",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 3048,
+        "zip_mib_approx": 3072
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdul-basit-mujawwad-128kbps",
+      "huggingface_repo": "maqra-project/abdul-basit-mujawwad-128kbps"
+    },
+    {
+      "slug": "abdul-basit-murattal-192kbps",
+      "name": "Abdul Basit Abdus-Samad, Murattal",
+      "reciter_key": "abdul-basit",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Abdul_Basit_Murattal_192kbps",
+      "source_url": "https://everyayah.com/data/Abdul_Basit_Murattal_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 2478,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdul-basit-murattal-192kbps",
+      "huggingface_repo": "maqra-project/abdul-basit-murattal-192kbps"
+    },
+    {
+      "slug": "abdul-basit-murattal-64kbps",
+      "name": "Abdul Basit Abdus-Samad, Murattal",
+      "reciter_key": "abdul-basit",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Abdul_Basit_Murattal_64kbps",
+      "source_url": "https://everyayah.com/data/Abdul_Basit_Murattal_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6252,
+        "ayah_files_mib_approx": 859,
+        "zip_mib_approx": 863
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdul-basit-murattal-64kbps",
+      "huggingface_repo": "maqra-project/abdul-basit-murattal-64kbps"
+    },
+    {
+      "slug": "abdullah-awad-al-juhani-128kbps",
+      "name": "Abdullah Awad Al-Juhani",
+      "reciter_key": "abdullah-al-juhani",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Abdullaah_3awwaad_Al-Juhaynee_128kbps",
+      "source_url": "https://everyayah.com/data/Abdullaah_3awwaad_Al-Juhaynee_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1122,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdullah-awad-al-juhani-128kbps",
+      "huggingface_repo": "maqra-project/abdullah-awad-al-juhani-128kbps"
+    },
+    {
+      "slug": "abdullah-basfar-192kbps",
+      "name": "Abdullah Basfar",
+      "reciter_key": "abdullah-basfar",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Abdullah_Basfar_192kbps",
+      "source_url": "https://everyayah.com/data/Abdullah_Basfar_192kbps/",
+      "upstream_checksum_files": [],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "005",
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6314,
+        "ayah_files_mib_approx": 2388,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "No 000_checksum.md5 upstream; verified by exact size, hashes generated by Maqra.",
+      "github_release_tag": "abdullah-basfar-192kbps",
+      "huggingface_repo": "maqra-project/abdullah-basfar-192kbps"
+    },
+    {
+      "slug": "abdullah-basfar-32kbps",
+      "name": "Abdullah Basfar",
+      "reciter_key": "abdullah-basfar",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 32,
+      "source_folder": "Abdullah_Basfar_32kbps",
+      "source_url": "https://everyayah.com/data/Abdullah_Basfar_32kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 431,
+        "zip_mib_approx": 434
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdullah-basfar-32kbps",
+      "huggingface_repo": "maqra-project/abdullah-basfar-32kbps"
+    },
+    {
+      "slug": "abdullah-basfar-64kbps",
+      "name": "Abdullah Basfar",
+      "reciter_key": "abdullah-basfar",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Abdullah_Basfar_64kbps",
+      "source_url": "https://everyayah.com/data/Abdullah_Basfar_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6313,
+        "ayah_files_mib_approx": 820,
+        "zip_mib_approx": 825
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdullah-basfar-64kbps",
+      "huggingface_repo": "maqra-project/abdullah-basfar-64kbps"
+    },
+    {
+      "slug": "abdullah-matroud-128kbps",
+      "name": "Abdullah Matroud",
+      "reciter_key": "abdullah-matroud",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Abdullah_Matroud_128kbps",
+      "source_url": "https://everyayah.com/data/Abdullah_Matroud_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1539,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdullah-matroud-128kbps",
+      "huggingface_repo": "maqra-project/abdullah-matroud-128kbps"
+    },
+    {
+      "slug": "abdurrahman-as-sudais-192kbps",
+      "name": "Abdurrahman As-Sudais",
+      "reciter_key": "as-sudais",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Abdurrahmaan_As-Sudais_192kbps",
+      "source_url": "https://everyayah.com/data/Abdurrahmaan_As-Sudais_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 1722,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdurrahman-as-sudais-192kbps",
+      "huggingface_repo": "maqra-project/abdurrahman-as-sudais-192kbps"
+    },
+    {
+      "slug": "abdurrahman-as-sudais-64kbps",
+      "name": "Abdurrahman As-Sudais",
+      "reciter_key": "as-sudais",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Abdurrahmaan_As-Sudais_64kbps",
+      "source_url": "https://everyayah.com/data/Abdurrahmaan_As-Sudais_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 579,
+        "zip_mib_approx": 583
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abdurrahman-as-sudais-64kbps",
+      "huggingface_repo": "maqra-project/abdurrahman-as-sudais-64kbps"
+    },
+    {
+      "slug": "abu-bakr-ash-shatri-128kbps",
+      "name": "Abu Bakr Ash-Shatri",
+      "reciter_key": "ash-shatri",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Abu_Bakr_Ash-Shaatree_128kbps",
+      "source_url": "https://everyayah.com/data/Abu_Bakr_Ash-Shaatree_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_unverified_checksum.md5",
+        "md5.sum"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1353,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abu-bakr-ash-shatri-128kbps",
+      "huggingface_repo": "maqra-project/abu-bakr-ash-shatri-128kbps"
+    },
+    {
+      "slug": "abu-bakr-ash-shatri-64kbps",
+      "name": "Abu Bakr Ash-Shatri",
+      "reciter_key": "ash-shatri",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Abu_Bakr_Ash-Shaatree_64kbps",
+      "source_url": "https://everyayah.com/data/Abu_Bakr_Ash-Shaatree_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 725,
+        "zip_mib_approx": 729
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "abu-bakr-ash-shatri-64kbps",
+      "huggingface_repo": "maqra-project/abu-bakr-ash-shatri-64kbps"
+    },
+    {
+      "slug": "ahmed-neana-128kbps",
+      "name": "Ahmed Neana",
+      "reciter_key": "ahmed-neana",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Ahmed_Neana_128kbps",
+      "source_url": "https://everyayah.com/data/Ahmed_Neana_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1656,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ahmed-neana-128kbps",
+      "huggingface_repo": "maqra-project/ahmed-neana-128kbps"
+    },
+    {
+      "slug": "ahmed-al-ajmi-128kbps-ketaballah",
+      "name": "Ahmed ibn Ali Al-Ajmi (KetabAllah.net edition)",
+      "reciter_key": "ahmed-al-ajmi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net",
+      "source_url": "https://everyayah.com/data/Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1481,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ahmed-al-ajmi-128kbps-ketaballah",
+      "huggingface_repo": "maqra-project/ahmed-al-ajmi-128kbps-ketaballah"
+    },
+    {
+      "slug": "ahmed-al-ajmi-64kbps-quranexplorer",
+      "name": "Ahmed ibn Ali Al-Ajmi (QuranExplorer.com edition)",
+      "reciter_key": "ahmed-al-ajmi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com",
+      "source_url": "https://everyayah.com/data/Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 729,
+        "zip_mib_approx": 733
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ahmed-al-ajmi-64kbps-quranexplorer",
+      "huggingface_repo": "maqra-project/ahmed-al-ajmi-64kbps-quranexplorer"
+    },
+    {
+      "slug": "ahmed-al-ajmi-128kbps",
+      "name": "Ahmed ibn Ali Al-Ajmi",
+      "reciter_key": "ahmed-al-ajmi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "ahmed_ibn_ali_al_ajamy_128kbps",
+      "source_url": "https://everyayah.com/data/ahmed_ibn_ali_al_ajamy_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1426,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ahmed-al-ajmi-128kbps",
+      "huggingface_repo": "maqra-project/ahmed-al-ajmi-128kbps"
+    },
+    {
+      "slug": "akram-al-alaqimi-128kbps",
+      "name": "Akram Al-Alaqimi",
+      "reciter_key": "akram-al-alaqimi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Akram_AlAlaqimy_128kbps",
+      "source_url": "https://everyayah.com/data/Akram_AlAlaqimy_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1538,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "akram-al-alaqimi-128kbps",
+      "huggingface_repo": "maqra-project/akram-al-alaqimi-128kbps"
+    },
+    {
+      "slug": "mishari-alafasy-128kbps",
+      "name": "Mishari Rashid Alafasy",
+      "reciter_key": "alafasy",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Alafasy_128kbps",
+      "source_url": "https://everyayah.com/data/Alafasy_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_unverified_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6348,
+        "ayah_files_mib_approx": 1631,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mishari-alafasy-128kbps",
+      "huggingface_repo": "maqra-project/mishari-alafasy-128kbps"
+    },
+    {
+      "slug": "mishari-alafasy-64kbps",
+      "name": "Mishari Rashid Alafasy",
+      "reciter_key": "alafasy",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Alafasy_64kbps",
+      "source_url": "https://everyayah.com/data/Alafasy_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 821,
+        "zip_mib_approx": 824
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mishari-alafasy-64kbps",
+      "huggingface_repo": "maqra-project/mishari-alafasy-64kbps"
+    },
+    {
+      "slug": "ali-hajjaj-al-suwaisi-128kbps",
+      "name": "Ali Hajjaj Al-Suwaisi",
+      "reciter_key": "ali-hajjaj-al-suwaisi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Ali_Hajjaj_AlSuesy_128kbps",
+      "source_url": "https://everyayah.com/data/Ali_Hajjaj_AlSuesy_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1680,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ali-hajjaj-al-suwaisi-128kbps",
+      "huggingface_repo": "maqra-project/ali-hajjaj-al-suwaisi-128kbps"
+    },
+    {
+      "slug": "ali-jaber-64kbps",
+      "name": "Ali Jaber",
+      "reciter_key": "ali-jaber",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Ali_Jaber_64kbps",
+      "source_url": "https://everyayah.com/data/Ali_Jaber_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 696,
+        "zip_mib_approx": 700
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ali-jaber-64kbps",
+      "huggingface_repo": "maqra-project/ali-jaber-64kbps"
+    },
+    {
+      "slug": "ayman-swaid-64kbps",
+      "name": "Ayman Swaid",
+      "reciter_key": "ayman-swaid",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Ayman_Sowaid_64kbps",
+      "source_url": "https://everyayah.com/data/Ayman_Sowaid_64kbps/",
+      "upstream_checksum_files": [],
+      "upstream_zip": null,
+      "upstream_subfolders": [
+        "replaced"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1130,
+        "zip_mib_approx": 0
+      },
+      "status": "complete",
+      "notes": "No checksum file and no zip upstream; loose files only.",
+      "github_release_tag": "ayman-swaid-64kbps",
+      "huggingface_repo": "maqra-project/ayman-swaid-64kbps"
+    },
+    {
+      "slug": "aziz-alili-128kbps",
+      "name": "Aziz Alili",
+      "reciter_key": "aziz-alili",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "aziz_alili_128kbps",
+      "source_url": "https://everyayah.com/data/aziz_alili_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1410,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Ships its own 000_timings.zip upstream.",
+      "github_release_tag": "aziz-alili-128kbps",
+      "huggingface_repo": "maqra-project/aziz-alili-128kbps"
+    },
+    {
+      "slug": "fares-abbad-64kbps",
+      "name": "Fares Abbad",
+      "reciter_key": "fares-abbad",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Fares_Abbad_64kbps",
+      "source_url": "https://everyayah.com/data/Fares_Abbad_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 589,
+        "zip_mib_approx": 594
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "fares-abbad-64kbps",
+      "huggingface_repo": "maqra-project/fares-abbad-64kbps"
+    },
+    {
+      "slug": "saad-al-ghamdi-40kbps",
+      "name": "Saad Al-Ghamdi",
+      "reciter_key": "saad-al-ghamdi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 40,
+      "source_folder": "Ghamadi_40kbps",
+      "source_url": "https://everyayah.com/data/Ghamadi_40kbps/",
+      "upstream_checksum_files": [
+        "000_unverified_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6347,
+        "ayah_files_mib_approx": 423,
+        "zip_mib_approx": 425
+      },
+      "status": "complete",
+      "notes": "Only 000_unverified_checksum.md5 upstream.",
+      "github_release_tag": "saad-al-ghamdi-40kbps",
+      "huggingface_repo": "maqra-project/saad-al-ghamdi-40kbps"
+    },
+    {
+      "slug": "hani-ar-rifai-192kbps",
+      "name": "Hani Ar-Rifai",
+      "reciter_key": "hani-ar-rifai",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Hani_Rifai_192kbps",
+      "source_url": "https://everyayah.com/data/Hani_Rifai_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_checksum_old.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "Timings_BETA",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 2014,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "hani-ar-rifai-192kbps",
+      "huggingface_repo": "maqra-project/hani-ar-rifai-192kbps"
+    },
+    {
+      "slug": "hani-ar-rifai-64kbps",
+      "name": "Hani Ar-Rifai",
+      "reciter_key": "hani-ar-rifai",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Hani_Rifai_64kbps",
+      "source_url": "https://everyayah.com/data/Hani_Rifai_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 698,
+        "zip_mib_approx": 701
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "hani-ar-rifai-64kbps",
+      "huggingface_repo": "maqra-project/hani-ar-rifai-64kbps"
+    },
+    {
+      "slug": "ali-al-hudhaifi-128kbps",
+      "name": "Ali Al-Hudhaifi",
+      "reciter_key": "ali-al-hudhaifi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Hudhaify_128kbps",
+      "source_url": "https://everyayah.com/data/Hudhaify_128kbps/",
+      "upstream_checksum_files": [
+        "000_unverified_checksum.md5",
+        "md5.sum"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1634,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Only 000_unverified_checksum.md5 and md5.sum upstream.",
+      "github_release_tag": "ali-al-hudhaifi-128kbps",
+      "huggingface_repo": "maqra-project/ali-al-hudhaifi-128kbps"
+    },
+    {
+      "slug": "ali-al-hudhaifi-32kbps",
+      "name": "Ali Al-Hudhaifi",
+      "reciter_key": "ali-al-hudhaifi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 32,
+      "source_folder": "Hudhaify_32kbps",
+      "source_url": "https://everyayah.com/data/Hudhaify_32kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_unverified_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 312,
+        "zip_mib_approx": 316
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ali-al-hudhaifi-32kbps",
+      "huggingface_repo": "maqra-project/ali-al-hudhaifi-32kbps"
+    },
+    {
+      "slug": "ali-al-hudhaifi-64kbps",
+      "name": "Ali Al-Hudhaifi",
+      "reciter_key": "ali-al-hudhaifi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Hudhaify_64kbps",
+      "source_url": "https://everyayah.com/data/Hudhaify_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 812,
+        "zip_mib_approx": 816
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ali-al-hudhaifi-64kbps",
+      "huggingface_repo": "maqra-project/ali-al-hudhaifi-64kbps"
+    },
+    {
+      "slug": "mahmoud-al-husary-murattal-128kbps",
+      "name": "Mahmoud Khalil Al-Husary, Murattal",
+      "reciter_key": "al-husary",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Husary_128kbps",
+      "source_url": "https://everyayah.com/data/Husary_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_oldchecksum.md5",
+        "md5.sum"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6237,
+        "ayah_files_mib_approx": 2298,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mahmoud-al-husary-murattal-128kbps",
+      "huggingface_repo": "maqra-project/mahmoud-al-husary-murattal-128kbps"
+    },
+    {
+      "slug": "mahmoud-al-husary-mujawwad-128kbps",
+      "name": "Mahmoud Khalil Al-Husary, Mujawwad",
+      "reciter_key": "al-husary",
+      "style": "mujawwad",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Husary_128kbps_Mujawwad",
+      "source_url": "https://everyayah.com/data/Husary_128kbps_Mujawwad/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "old",
+        "replaced"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6237,
+        "ayah_files_mib_approx": 3104,
+        "zip_mib_approx": 3072
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mahmoud-al-husary-mujawwad-128kbps",
+      "huggingface_repo": "maqra-project/mahmoud-al-husary-mujawwad-128kbps"
+    },
+    {
+      "slug": "mahmoud-al-husary-murattal-64kbps",
+      "name": "Mahmoud Khalil Al-Husary, Murattal",
+      "reciter_key": "al-husary",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Husary_64kbps",
+      "source_url": "https://everyayah.com/data/Husary_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6237,
+        "ayah_files_mib_approx": 1167,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mahmoud-al-husary-murattal-64kbps",
+      "huggingface_repo": "maqra-project/mahmoud-al-husary-murattal-64kbps"
+    },
+    {
+      "slug": "mahmoud-al-husary-muallim-128kbps",
+      "name": "Mahmoud Khalil Al-Husary, Muallim (teaching recitation)",
+      "reciter_key": "al-husary",
+      "style": "muallim",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Husary_Muallim_128kbps",
+      "source_url": "https://everyayah.com/data/Husary_Muallim_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 2538,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mahmoud-al-husary-muallim-128kbps",
+      "huggingface_repo": "maqra-project/mahmoud-al-husary-muallim-128kbps"
+    },
+    {
+      "slug": "mahmoud-al-husary-mujawwad-64kbps",
+      "name": "Mahmoud Khalil Al-Husary, Mujawwad",
+      "reciter_key": "al-husary",
+      "style": "mujawwad",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Husary_Mujawwad_64kbps",
+      "source_url": "https://everyayah.com/data/Husary_Mujawwad_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6238,
+        "ayah_files_mib_approx": 1669,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mahmoud-al-husary-mujawwad-64kbps",
+      "huggingface_repo": "maqra-project/mahmoud-al-husary-mujawwad-64kbps"
+    },
+    {
+      "slug": "ibrahim-al-akhdar-32kbps",
+      "name": "Ibrahim Al-Akhdar",
+      "reciter_key": "ibrahim-al-akhdar",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 32,
+      "source_folder": "Ibrahim_Akhdar_32kbps",
+      "source_url": "https://everyayah.com/data/Ibrahim_Akhdar_32kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "checksums.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 460,
+        "zip_mib_approx": 464
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ibrahim-al-akhdar-32kbps",
+      "huggingface_repo": "maqra-project/ibrahim-al-akhdar-32kbps"
+    },
+    {
+      "slug": "karim-mansouri-40kbps",
+      "name": "Karim Mansouri",
+      "reciter_key": "karim-mansouri",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 40,
+      "source_folder": "Karim_Mansoori_40kbps",
+      "source_url": "https://everyayah.com/data/Karim_Mansoori_40kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6348,
+        "ayah_files_mib_approx": 1009,
+        "zip_mib_approx": 1014
+      },
+      "status": "complete",
+      "notes": "Upstream details: downloaded pre-split from islam4u.com.",
+      "github_release_tag": "karim-mansouri-40kbps",
+      "huggingface_repo": "maqra-project/karim-mansouri-40kbps"
+    },
+    {
+      "slug": "khalid-al-qahtani-192kbps",
+      "name": "Khalid Abdullah Al-Qahtani",
+      "reciter_key": "khalid-al-qahtani",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Khaalid_Abdullaah_al-Qahtaanee_192kbps",
+      "source_url": "https://everyayah.com/data/Khaalid_Abdullaah_al-Qahtaanee_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 2183,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "khalid-al-qahtani-192kbps",
+      "huggingface_repo": "maqra-project/khalid-al-qahtani-192kbps"
+    },
+    {
+      "slug": "khalifa-al-tunaiji-64kbps",
+      "name": "Khalifa Al-Tunaiji",
+      "reciter_key": "khalifa-al-tunaiji",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "khalefa_al_tunaiji_64kbps",
+      "source_url": "https://everyayah.com/data/khalefa_al_tunaiji_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 753,
+        "zip_mib_approx": 757
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "khalifa-al-tunaiji-64kbps",
+      "huggingface_repo": "maqra-project/khalifa-al-tunaiji-64kbps"
+    },
+    {
+      "slug": "maher-al-muaiqly-128kbps",
+      "name": "Maher Al-Muaiqly",
+      "reciter_key": "maher-al-muaiqly",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "MaherAlMuaiqly128kbps",
+      "source_url": "https://everyayah.com/data/MaherAlMuaiqly128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "md5sum.txt"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "notclear",
+        "old",
+        "original",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6348,
+        "ayah_files_mib_approx": 1148,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Upstream info.txt (Zekr project, 2010): recitation license UNKNOWN.",
+      "github_release_tag": "maher-al-muaiqly-128kbps",
+      "huggingface_repo": "maqra-project/maher-al-muaiqly-128kbps"
+    },
+    {
+      "slug": "maher-al-muaiqly-64kbps",
+      "name": "Maher Al-Muaiqly",
+      "reciter_key": "maher-al-muaiqly",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Maher_AlMuaiqly_64kbps",
+      "source_url": "https://everyayah.com/data/Maher_AlMuaiqly_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "notclear",
+        "old",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6348,
+        "ayah_files_mib_approx": 585,
+        "zip_mib_approx": 585
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "maher-al-muaiqly-64kbps",
+      "huggingface_repo": "maqra-project/maher-al-muaiqly-64kbps"
+    },
+    {
+      "slug": "mahmoud-ali-al-banna-32kbps",
+      "name": "Mahmoud Ali Al-Banna",
+      "reciter_key": "mahmoud-ali-al-banna",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 32,
+      "source_folder": "mahmoud_ali_al_banna_32kbps",
+      "source_url": "https://everyayah.com/data/mahmoud_ali_al_banna_32kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 363,
+        "zip_mib_approx": 366
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mahmoud-ali-al-banna-32kbps",
+      "huggingface_repo": "maqra-project/mahmoud-ali-al-banna-32kbps"
+    },
+    {
+      "slug": "mohamed-siddiq-al-minshawi-16kbps",
+      "name": "Mohamed Siddiq Al-Minshawi",
+      "reciter_key": "al-minshawi",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 16,
+      "source_folder": "Menshawi_16kbps",
+      "source_url": "https://everyayah.com/data/Menshawi_16kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_unverified_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6238,
+        "ayah_files_mib_approx": 190,
+        "zip_mib_approx": 194
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mohamed-siddiq-al-minshawi-16kbps",
+      "huggingface_repo": "maqra-project/mohamed-siddiq-al-minshawi-16kbps"
+    },
+    {
+      "slug": "mohamed-siddiq-al-minshawi-32kbps",
+      "name": "Mohamed Siddiq Al-Minshawi",
+      "reciter_key": "al-minshawi",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 32,
+      "source_folder": "Menshawi_32kbps",
+      "source_url": "https://everyayah.com/data/Menshawi_32kbps/",
+      "upstream_checksum_files": [
+        "000_unverified_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 5933,
+        "ayah_files_mib_approx": 390,
+        "zip_mib_approx": 391
+      },
+      "status": "incomplete",
+      "notes": "Incomplete upstream: 303 ayah files missing. Only 000_unverified_checksum.md5.",
+      "github_release_tag": "mohamed-siddiq-al-minshawi-32kbps",
+      "huggingface_repo": "maqra-project/mohamed-siddiq-al-minshawi-32kbps"
+    },
+    {
+      "slug": "mohamed-siddiq-al-minshawi-mujawwad-192kbps",
+      "name": "Mohamed Siddiq Al-Minshawi, Mujawwad",
+      "reciter_key": "al-minshawi",
+      "style": "mujawwad",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Minshawy_Mujawwad_192kbps",
+      "source_url": "https://everyayah.com/data/Minshawy_Mujawwad_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 4134,
+        "zip_mib_approx": 4096
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mohamed-siddiq-al-minshawi-mujawwad-192kbps",
+      "huggingface_repo": "maqra-project/mohamed-siddiq-al-minshawi-mujawwad-192kbps"
+    },
+    {
+      "slug": "mohamed-siddiq-al-minshawi-mujawwad-64kbps",
+      "name": "Mohamed Siddiq Al-Minshawi, Mujawwad",
+      "reciter_key": "al-minshawi",
+      "style": "mujawwad",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Minshawy_Mujawwad_64kbps",
+      "source_url": "https://everyayah.com/data/Minshawy_Mujawwad_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 1624,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mohamed-siddiq-al-minshawi-mujawwad-64kbps",
+      "huggingface_repo": "maqra-project/mohamed-siddiq-al-minshawi-mujawwad-64kbps"
+    },
+    {
+      "slug": "mohamed-siddiq-al-minshawi-murattal-128kbps",
+      "name": "Mohamed Siddiq Al-Minshawi, Murattal",
+      "reciter_key": "al-minshawi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Minshawy_Murattal_128kbps",
+      "source_url": "https://everyayah.com/data/Minshawy_Murattal_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 1571,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mohamed-siddiq-al-minshawi-murattal-128kbps",
+      "huggingface_repo": "maqra-project/mohamed-siddiq-al-minshawi-murattal-128kbps"
+    },
+    {
+      "slug": "mohamed-siddiq-al-minshawi-muallim-128kbps",
+      "name": "Mohamed Siddiq Al-Minshawi, Muallim (teaching recitation)",
+      "reciter_key": "al-minshawi",
+      "style": "muallim",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Minshawy_Teacher_128kbps",
+      "source_url": "https://everyayah.com/data/Minshawy_Teacher_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 2844,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "Present on the server but listed nowhere on everyayah.com.",
+      "github_release_tag": "mohamed-siddiq-al-minshawi-muallim-128kbps",
+      "huggingface_repo": "maqra-project/mohamed-siddiq-al-minshawi-muallim-128kbps"
+    },
+    {
+      "slug": "mohammad-al-tablawi-128kbps",
+      "name": "Mohammad Al-Tablawi",
+      "reciter_key": "mohammad-al-tablawi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Mohammad_al_Tablaway_128kbps",
+      "source_url": "https://everyayah.com/data/Mohammad_al_Tablaway_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1623,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mohammad-al-tablawi-128kbps",
+      "huggingface_repo": "maqra-project/mohammad-al-tablawi-128kbps"
+    },
+    {
+      "slug": "mohammad-al-tablawi-64kbps",
+      "name": "Mohammad Al-Tablawi",
+      "reciter_key": "mohammad-al-tablawi",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Mohammad_al_Tablaway_64kbps",
+      "source_url": "https://everyayah.com/data/Mohammad_al_Tablaway_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 817,
+        "zip_mib_approx": 821
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "mohammad-al-tablawi-64kbps",
+      "huggingface_repo": "maqra-project/mohammad-al-tablawi-64kbps"
+    },
+    {
+      "slug": "muhammad-abdul-kareem-128kbps",
+      "name": "Muhammad Abdul-Kareem",
+      "reciter_key": "muhammad-abdul-kareem",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Muhammad_AbdulKareem_128kbps",
+      "source_url": "https://everyayah.com/data/Muhammad_AbdulKareem_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1276,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "muhammad-abdul-kareem-128kbps",
+      "huggingface_repo": "maqra-project/muhammad-abdul-kareem-128kbps"
+    },
+    {
+      "slug": "muhammad-ayyub-128kbps",
+      "name": "Muhammad Ayyub",
+      "reciter_key": "muhammad-ayyub",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Muhammad_Ayyoub_128kbps",
+      "source_url": "https://everyayah.com/data/Muhammad_Ayyoub_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5",
+        "000_unverified_checksum.md5",
+        "md5.sum"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 1748,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "muhammad-ayyub-128kbps",
+      "huggingface_repo": "maqra-project/muhammad-ayyub-128kbps"
+    },
+    {
+      "slug": "muhammad-ayyub-32kbps",
+      "name": "Muhammad Ayyub",
+      "reciter_key": "muhammad-ayyub",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 32,
+      "source_folder": "Muhammad_Ayyoub_32kbps",
+      "source_url": "https://everyayah.com/data/Muhammad_Ayyoub_32kbps/",
+      "upstream_checksum_files": [
+        "000_unverified_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1309,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Only 000_unverified_checksum.md5 upstream.",
+      "github_release_tag": "muhammad-ayyub-32kbps",
+      "huggingface_repo": "maqra-project/muhammad-ayyub-32kbps"
+    },
+    {
+      "slug": "muhammad-ayyub-64kbps",
+      "name": "Muhammad Ayyub",
+      "reciter_key": "muhammad-ayyub",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Muhammad_Ayyoub_64kbps",
+      "source_url": "https://everyayah.com/data/Muhammad_Ayyoub_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 886,
+        "zip_mib_approx": 890
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "muhammad-ayyub-64kbps",
+      "huggingface_repo": "maqra-project/muhammad-ayyub-64kbps"
+    },
+    {
+      "slug": "muhammad-jibril-128kbps",
+      "name": "Muhammad Jibril",
+      "reciter_key": "muhammad-jibril",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Muhammad_Jibreel_128kbps",
+      "source_url": "https://everyayah.com/data/Muhammad_Jibreel_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 1419,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "muhammad-jibril-128kbps",
+      "huggingface_repo": "maqra-project/muhammad-jibril-128kbps"
+    },
+    {
+      "slug": "muhammad-jibril-64kbps",
+      "name": "Muhammad Jibril",
+      "reciter_key": "muhammad-jibril",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Muhammad_Jibreel_64kbps",
+      "source_url": "https://everyayah.com/data/Muhammad_Jibreel_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6349,
+        "ayah_files_mib_approx": 719,
+        "zip_mib_approx": 723
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "muhammad-jibril-64kbps",
+      "huggingface_repo": "maqra-project/muhammad-jibril-64kbps"
+    },
+    {
+      "slug": "muhsin-al-qasim-192kbps",
+      "name": "Muhsin Al-Qasim",
+      "reciter_key": "muhsin-al-qasim",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 192,
+      "source_folder": "Muhsin_Al_Qasim_192kbps",
+      "source_url": "https://everyayah.com/data/Muhsin_Al_Qasim_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1674,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "muhsin-al-qasim-192kbps",
+      "huggingface_repo": "maqra-project/muhsin-al-qasim-192kbps"
+    },
+    {
+      "slug": "mustafa-ismail-48kbps",
+      "name": "Mustafa Ismail",
+      "reciter_key": "mustafa-ismail",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 48,
+      "source_folder": "Mustafa_Ismail_48kbps",
+      "source_url": "https://everyayah.com/data/Mustafa_Ismail_48kbps/",
+      "upstream_checksum_files": [],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 2017,
+        "ayah_files_mib_approx": 155,
+        "zip_mib_approx": 156
+      },
+      "status": "incomplete",
+      "notes": "Incomplete upstream: 2017 of 6236 ayah files present (4219 missing). No checksum file.",
+      "github_release_tag": "mustafa-ismail-48kbps",
+      "huggingface_repo": "maqra-project/mustafa-ismail-48kbps"
+    },
+    {
+      "slug": "nabil-ar-rifai-48kbps",
+      "name": "Nabil Ar-Rifai",
+      "reciter_key": "nabil-ar-rifai",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 48,
+      "source_folder": "Nabil_Rifa3i_48kbps",
+      "source_url": "https://everyayah.com/data/Nabil_Rifa3i_48kbps/",
+      "upstream_checksum_files": [],
+      "upstream_zip": null,
+      "upstream_subfolders": [],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6345,
+        "ayah_files_mib_approx": 717,
+        "zip_mib_approx": 0
+      },
+      "status": "complete",
+      "notes": "Upstream details: provided by Ebrahim Badiee, Shiraz, 2019-2020. No checksum file, no zip.",
+      "github_release_tag": "nabil-ar-rifai-48kbps",
+      "huggingface_repo": "maqra-project/nabil-ar-rifai-48kbps"
+    },
+    {
+      "slug": "nasser-al-qatami-128kbps",
+      "name": "Nasser Al-Qatami",
+      "reciter_key": "nasser-al-qatami",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Nasser_Alqatami_128kbps",
+      "source_url": "https://everyayah.com/data/Nasser_Alqatami_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1124,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "nasser-al-qatami-128kbps",
+      "huggingface_repo": "maqra-project/nasser-al-qatami-128kbps"
+    },
+    {
+      "slug": "parhizgar-48kbps",
+      "name": "Parhizgar",
+      "reciter_key": "parhizgar",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 48,
+      "source_folder": "Parhizgar_48kbps",
+      "source_url": "https://everyayah.com/data/Parhizgar_48kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 570,
+        "zip_mib_approx": 572
+      },
+      "status": "complete",
+      "notes": "recitations.js labels this entry Parhizgar_64Kbps; the folder says 48kbps.",
+      "github_release_tag": "parhizgar-48kbps",
+      "huggingface_repo": "maqra-project/parhizgar-48kbps"
+    },
+    {
+      "slug": "sahl-yassin-128kbps",
+      "name": "Sahl Yassin",
+      "reciter_key": "sahl-yassin",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Sahl_Yassin_128kbps",
+      "source_url": "https://everyayah.com/data/Sahl_Yassin_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1343,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "sahl-yassin-128kbps",
+      "huggingface_repo": "maqra-project/sahl-yassin-128kbps"
+    },
+    {
+      "slug": "salah-bukhatir-128kbps",
+      "name": "Salah Abdurrahman Bukhatir",
+      "reciter_key": "salah-bukhatir",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Salaah_AbdulRahman_Bukhatir_128kbps",
+      "source_url": "https://everyayah.com/data/Salaah_AbdulRahman_Bukhatir_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1317,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "salah-bukhatir-128kbps",
+      "huggingface_repo": "maqra-project/salah-bukhatir-128kbps"
+    },
+    {
+      "slug": "salah-al-budair-128kbps",
+      "name": "Salah Al-Budair",
+      "reciter_key": "salah-al-budair",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Salah_Al_Budair_128kbps",
+      "source_url": "https://everyayah.com/data/Salah_Al_Budair_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1238,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "salah-al-budair-128kbps",
+      "huggingface_repo": "maqra-project/salah-al-budair-128kbps"
+    },
+    {
+      "slug": "saud-ash-shuraim-128kbps",
+      "name": "Saud Ash-Shuraim",
+      "reciter_key": "saud-ash-shuraim",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Saood_ash-Shuraym_128kbps",
+      "source_url": "https://everyayah.com/data/Saood_ash-Shuraym_128kbps/",
+      "upstream_checksum_files": [
+        "000_unverified_checksum.md5",
+        "Shuray_md5.sum"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6355,
+        "ayah_files_mib_approx": 1001,
+        "zip_mib_approx": 1006
+      },
+      "status": "complete",
+      "notes": "Only 000_unverified_checksum.md5 and Shuray_md5.sum upstream.",
+      "github_release_tag": "saud-ash-shuraim-128kbps",
+      "huggingface_repo": "maqra-project/saud-ash-shuraim-128kbps"
+    },
+    {
+      "slug": "saud-ash-shuraim-64kbps",
+      "name": "Saud Ash-Shuraim",
+      "reciter_key": "saud-ash-shuraim",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "Saood_ash-Shuraym_64kbps",
+      "source_url": "https://everyayah.com/data/Saood_ash-Shuraym_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6356,
+        "ayah_files_mib_approx": 506,
+        "zip_mib_approx": 509
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "saud-ash-shuraim-64kbps",
+      "huggingface_repo": "maqra-project/saud-ash-shuraim-64kbps"
+    },
+    {
+      "slug": "yasser-salamah-128kbps",
+      "name": "Yasser Salamah",
+      "reciter_key": "yasser-salamah",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Yaser_Salamah_128kbps",
+      "source_url": "https://everyayah.com/data/Yaser_Salamah_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1472,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "yasser-salamah-128kbps",
+      "huggingface_repo": "maqra-project/yasser-salamah-128kbps"
+    },
+    {
+      "slug": "yasser-ad-dossari-128kbps",
+      "name": "Yasser Ad-Dossari",
+      "reciter_key": "yasser-ad-dossari",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "Yasser_Ad-Dussary_128kbps",
+      "source_url": "https://everyayah.com/data/Yasser_Ad-Dussary_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1428,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "yasser-ad-dossari-128kbps",
+      "huggingface_repo": "maqra-project/yasser-ad-dossari-128kbps"
+    },
+    {
+      "slug": "en-sahih-international-ibrahim-walk-192kbps",
+      "name": "English translation (Sahih International) read by Ibrahim Walk",
+      "reciter_key": "ibrahim-walk",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "en",
+      "kind": "translation",
+      "bitrate_kbps": 192,
+      "source_folder": "English/Sahih_Intnl_Ibrahim_Walk_192kbps",
+      "source_url": "https://everyayah.com/data/English/Sahih_Intnl_Ibrahim_Walk_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6350,
+        "ayah_files_mib_approx": 1483,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Spoken English translation, one file per ayah.",
+      "github_release_tag": "en-sahih-international-ibrahim-walk-192kbps",
+      "huggingface_repo": "maqra-project/en-sahih-international-ibrahim-walk-192kbps"
+    },
+    {
+      "slug": "ar-en-basfar-walk-192kbps",
+      "name": "Abdullah Basfar (Arabic) with Ibrahim Walk (English translation)",
+      "reciter_key": "abdullah-basfar",
+      "style": "murattal",
+      "riwayah": "hafs",
+      "language": "ar+en",
+      "kind": "mixed",
+      "bitrate_kbps": 192,
+      "source_folder": "MultiLanguage/Basfar_Walk_192kbps",
+      "source_url": "https://everyayah.com/data/MultiLanguage/Basfar_Walk_192kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "mistakes",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6241,
+        "ayah_files_mib_approx": 3629,
+        "zip_mib_approx": 3072
+      },
+      "status": "complete",
+      "notes": "Each file carries the Arabic ayah followed by its English translation.",
+      "github_release_tag": "ar-en-basfar-walk-192kbps",
+      "huggingface_repo": "maqra-project/ar-en-basfar-walk-192kbps"
+    },
+    {
+      "slug": "fa-fooladvand-hedayatfar-40kbps",
+      "name": "Persian translation (Fooladvand) read by Hedayatfar",
+      "reciter_key": "hedayatfar",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "fa",
+      "kind": "translation",
+      "bitrate_kbps": 40,
+      "source_folder": "translations/Fooladvand_Hedayatfar_40Kbps",
+      "source_url": "https://everyayah.com/data/translations/Fooladvand_Hedayatfar_40Kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 453,
+        "zip_mib_approx": 453
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "fa-fooladvand-hedayatfar-40kbps",
+      "huggingface_repo": "maqra-project/fa-fooladvand-hedayatfar-40kbps"
+    },
+    {
+      "slug": "fa-makarem-kabiri-16kbps",
+      "name": "Persian translation (Makarem) read by Kabiri",
+      "reciter_key": "kabiri",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "fa",
+      "kind": "translation",
+      "bitrate_kbps": 16,
+      "source_folder": "translations/Makarem_Kabiri_16Kbps",
+      "source_url": "https://everyayah.com/data/translations/Makarem_Kabiri_16Kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 235,
+        "zip_mib_approx": 235
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "fa-makarem-kabiri-16kbps",
+      "huggingface_repo": "maqra-project/fa-makarem-kabiri-16kbps"
+    },
+    {
+      "slug": "az-balayev",
+      "name": "Azerbaijani translation read by Balayev",
+      "reciter_key": "balayev",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "az",
+      "kind": "translation",
+      "bitrate_kbps": null,
+      "source_folder": "translations/azerbaijani/balayev",
+      "source_url": "https://everyayah.com/data/translations/azerbaijani/balayev/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1139,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Bitrate not stated in the folder name; recitations.js says 64Kbps.",
+      "github_release_tag": "az-balayev",
+      "huggingface_repo": "maqra-project/az-balayev"
+    },
+    {
+      "slug": "bs-besim-korkut-128kbps",
+      "name": "Bosnian translation (Besim Korkut), ayah by ayah",
+      "reciter_key": "besim-korkut",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "bs",
+      "kind": "translation",
+      "bitrate_kbps": null,
+      "source_folder": "translations/besim_korkut_ajet_po_ajet",
+      "source_url": "https://everyayah.com/data/translations/besim_korkut_ajet_po_ajet/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 1250,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "Upstream details: readers Tarik Heli and Izudin Bajrovic, prepared by Dar Al Kuran, Mostar.",
+      "github_release_tag": "bs-besim-korkut-128kbps",
+      "huggingface_repo": "maqra-project/bs-besim-korkut-128kbps"
+    },
+    {
+      "slug": "ur-farhat-hashmi-32kbps",
+      "name": "Urdu word-for-word translation by Farhat Hashmi",
+      "reciter_key": "farhat-hashmi",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "ur",
+      "kind": "translation",
+      "bitrate_kbps": null,
+      "source_folder": "translations/urdu_farhat_hashmi",
+      "source_url": "https://everyayah.com/data/translations/urdu_farhat_hashmi/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "timings",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6348,
+        "ayah_files_mib_approx": 1378,
+        "zip_mib_approx": 1024
+      },
+      "status": "complete",
+      "notes": "Folder carries 44 lesson-note text files and its own timings subfolder.",
+      "github_release_tag": "ur-farhat-hashmi-32kbps",
+      "huggingface_repo": "maqra-project/ur-farhat-hashmi-32kbps"
+    },
+    {
+      "slug": "ur-shamshad-ali-khan-46kbps",
+      "name": "Urdu translation read by Shamshad Ali Khan",
+      "reciter_key": "shamshad-ali-khan",
+      "style": "unknown",
+      "riwayah": "hafs",
+      "language": "ur",
+      "kind": "translation",
+      "bitrate_kbps": 46,
+      "source_folder": "translations/urdu_shamshad_ali_khan_46kbps",
+      "source_url": "https://everyayah.com/data/translations/urdu_shamshad_ali_khan_46kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 485,
+        "zip_mib_approx": 485
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "ur-shamshad-ali-khan-46kbps",
+      "huggingface_repo": "maqra-project/ur-shamshad-ali-khan-46kbps"
+    },
+    {
+      "slug": "warsh-abdul-basit-128kbps",
+      "name": "Abdul Basit Abdus-Samad, Warsh",
+      "reciter_key": "abdul-basit",
+      "style": "murattal",
+      "riwayah": "warsh",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "warsh/warsh_Abdul_Basit_128kbps",
+      "source_url": "https://everyayah.com/data/warsh/warsh_Abdul_Basit_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "merged",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6214,
+        "ayah_files_mib_approx": 1855,
+        "zip_mib_approx": 1024
+      },
+      "status": "incomplete",
+      "notes": "Incomplete upstream: 6214 ayah files present (everyayah.com reports 47 missing).",
+      "github_release_tag": "warsh-abdul-basit-128kbps",
+      "huggingface_repo": "maqra-project/warsh-abdul-basit-128kbps"
+    },
+    {
+      "slug": "warsh-ibrahim-al-dosari-128kbps",
+      "name": "Ibrahim Al-Dosari, Warsh",
+      "reciter_key": "ibrahim-al-dosari",
+      "style": "murattal",
+      "riwayah": "warsh",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 128,
+      "source_folder": "warsh/warsh_ibrahim_aldosary_128kbps",
+      "source_url": "https://everyayah.com/data/warsh/warsh_ibrahim_aldosary_128kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "PageMp3s",
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6236,
+        "ayah_files_mib_approx": 2033,
+        "zip_mib_approx": 2048
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "warsh-ibrahim-al-dosari-128kbps",
+      "huggingface_repo": "maqra-project/warsh-ibrahim-al-dosari-128kbps"
+    },
+    {
+      "slug": "warsh-yassin-al-jazairi-64kbps",
+      "name": "Yassin Al-Jazairi, Warsh",
+      "reciter_key": "yassin-al-jazairi",
+      "style": "murattal",
+      "riwayah": "warsh",
+      "language": "ar",
+      "kind": "recitation",
+      "bitrate_kbps": 64,
+      "source_folder": "warsh/warsh_yassin_al_jazaery_64kbps",
+      "source_url": "https://everyayah.com/data/warsh/warsh_yassin_al_jazaery_64kbps/",
+      "upstream_checksum_files": [
+        "000_checksum.md5"
+      ],
+      "upstream_zip": "000_versebyverse.zip",
+      "upstream_subfolders": [
+        "replaced",
+        "zips"
+      ],
+      "survey_2026_08_25": {
+        "ayah_files_seen": 6237,
+        "ayah_files_mib_approx": 632,
+        "zip_mib_approx": 636
+      },
+      "status": "complete",
+      "notes": "",
+      "github_release_tag": "warsh-yassin-al-jazairi-64kbps",
+      "huggingface_repo": "maqra-project/warsh-yassin-al-jazairi-64kbps"
+    }
+  ],
+  "excluded_upstream_folders": [
+    {
+      "source_folder": "Abu Bakr Ash-Shaatree_128kbps",
+      "reason": "Byte-identical duplicate of Abu_Bakr_Ash-Shaatree_128kbps (same file count and sizes); the underscore folder is the one everyayah.com links to."
+    },
+    {
+      "source_folder": "Saood bin Ibraaheem Ash-Shuraym_128kbps",
+      "reason": "Duplicate of Saood_ash-Shuraym_128kbps with one extra stray file; the underscore folder is the one everyayah.com links to."
+    },
+    {
+      "source_folder": "English/Ibrahim_Walk_192kbps_TEST",
+      "reason": "Duplicate of English/Sahih_Intnl_Ibrahim_Walk_192kbps (same file count and sizes)."
+    },
+    {
+      "source_folder": "translations/bosnian/besim_korkut_ajet_po_ajet_audio",
+      "reason": "Duplicate of translations/besim_korkut_ajet_po_ajet (same file count and sizes), without checksum or zip."
+    },
+    {
+      "source_folder": "Ibrahim_Akhdar_64kbps",
+      "reason": "Empty upstream: no ayah files, and 000_versebyverse.zip is 527 bytes. everyayah.com itself reports 6236 files missing."
+    },
+    {
+      "source_folder": "MultiLanguage/Shaatree_Walk_64kbps",
+      "reason": "No per-ayah files; only a 1 GB offline zip of unknown internal layout. Mirrored verbatim under extras, not as a reciter set."
+    }
+  ]
+}
