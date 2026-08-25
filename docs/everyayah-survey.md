@@ -13,7 +13,7 @@ A static file tree under `https://everyayah.com/data/`, served by BunnyCDN with 
 | Quran Text images (JPG) | `/data/QuranText_jpg/` | 6237 JPGs plus a few a/b variants, 53 MiB |
 | Quran Text HI Res (PNG) | `/data/quranpngs/` | 6236 high-resolution PNGs plus `000_images.zip` (77 MiB), 151 MiB |
 | (unlisted) | `/data/images_png/` | 6236 small PNGs, 41 MiB; the home page's preview images |
-| Quran Timings Files | `/data/timings_files/` | 30 zips, 17 MiB, one text file per surah, one millisecond offset per line |
+| Quran Timings Files | `/data/timings_files/` | 27 zips plus a disclaimer, a fix note, and a readme, 17 MiB; one text file per surah, one millisecond offset per line |
 | Tools | `/data/tools/` | 10 files, 2.8 MiB: .NET splitting tools as source zips, mp3splt binaries |
 | XML | `/data/XML/` | Arabic text and four translations as per-surah XML, plus `Config.xml` for a QuranReader app |
 | Recitations: Ayat MP3 | `/recitations_ayat.html` | 79 sets with GO, ZIP, MD5, and More Zips links, plus "files missing" counts |
@@ -69,7 +69,7 @@ The full folder-by-folder table with subfolders and side files is `manifests/ups
 
 ## Timings
 
-Each zip in `timings_files/` unpacks to `001.txt` to `114.txt`. Each line is an integer: the millisecond offset in the full-surah recording at which an ayah ends. The disclaimer file states the terms (link back to everyayah.com) and warns that "many of our mp3s have been fixed manually after splitting these files, so this will not provide 100% accurate results." 30 timing sets exist, covering roughly a third of the reciters. Maqra converts each zip to one JSON file under `timings/`. Word-level timestamps for several everyayah sets exist separately in the MIT-licensed [cpfair/quran-align](https://github.com/cpfair/quran-align) project (data CC BY 4.0).
+Each zip in `timings_files/` unpacks to `001.txt` to `114.txt`. Each line is an integer: the millisecond offset in the full-surah recording at which an ayah ends. The disclaimer file states the terms (link back to everyayah.com) and warns that "many of our mp3s have been fixed manually after splitting these files, so this will not provide 100% accurate results." 27 zips exist; 26 hold timings (one holds five loose MP3s instead), covering roughly a third of the reciters. Maqra converts each to one JSON file under `timings/`. The Ash-Shatri readme upstream explains the extra first line most files carry: the recordings open with the basmala, so the first offset is where that intro ends. Word-level timestamps for several everyayah sets exist separately in the MIT-licensed [cpfair/quran-align](https://github.com/cpfair/quran-align) project (data CC BY 4.0).
 
 ## Images
 
