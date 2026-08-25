@@ -1,0 +1,5 @@
+# 2. Sets are named by canonical slugs, not upstream folder names
+
+Date: 2026-08-25
+
+everyayah.com's folder names grew over fifteen years and show it: `MaherAlMuaiqly128kbps` beside `Maher_AlMuaiqly_64kbps`, `Menshawi_16kbps` beside `Minshawy_Mujawwad_64kbps`, `Abu Bakr Ash-Shaatree_128kbps` with spaces beside its underscored twin, `Parhizgar_48kbps` labelled 64Kbps in the site's own table. A mirror that reused them would inherit every inconsistency into its URLs, dataset names, and release tags for good. Maqra assigns each set a lowercase hyphenated slug of the form `<reciter>[-<style>]-<bitrate>kbps`, with a language prefix for translation sets and a `warsh-` prefix for the Warsh riwayah, and records the upstream folder verbatim in `source_folder` on every set and every manifest. The cost is one indirection for anyone arriving with an everyayah URL; the registry and `docs/reciters.md` pay it. Ayah file names inside a set are kept exactly as upstream (`SSSAAA.mp3`), because that scheme is already consistent and already what every everyayah client expects.
