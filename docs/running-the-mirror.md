@@ -30,7 +30,7 @@ python -m maqra status
 
 `--root` (or `MAQRA_ROOT`) moves the data root. `--dry-run` on the publish commands prints what would happen.
 
-On Windows, `scripts\windows\mirror.cmd`, `verify.cmd`, `extras.cmd`, `status.cmd`, and `commit-manifests.cmd` run the same commands from a double-click and keep the window open at the end. They pick `py -3` when the Python launcher is installed and `python` otherwise.
+On Windows, `scripts\windows\mirror.cmd`, `verify.cmd`, `extras.cmd`, `status.cmd`, `commit-manifests.cmd`, `publish-github.cmd`, `publish-hf.cmd`, and `publish-hf-index.cmd` run the same commands from a double-click and keep the window open at the end. They pick `py -3` when the Python launcher is installed and `python` otherwise.
 
 ## What a set run does
 
