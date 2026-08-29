@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
+import time
 from pathlib import Path
 from typing import Callable, List, Optional
 
@@ -86,6 +87,7 @@ def publish_reciter(reciter: Reciter, releases_root: Path, log: Log, repo: str =
         log(f"[{reciter.slug}] creating release {tag}")
         _gh(["release", "create", tag, "-R", repo, "--title", title, "--notes-file", str(notes_path), "--latest=false"])
         have = []
+        time.sleep(5)  # a just-created release can briefly reject uploads
     else:
         _gh(["release", "edit", tag, "-R", repo, "--title", title, "--notes-file", str(notes_path)], check=False)
 
@@ -93,6 +95,22 @@ def publish_reciter(reciter: Reciter, releases_root: Path, log: Log, repo: str =
     log(f"[{reciter.slug}] {len(have)} assets present, {len(todo)} to upload")
     for i in range(0, len(todo), BATCH):
         batch = todo[i:i + BATCH]
-        _gh(["release", "upload", tag, "-R", repo, *[str(p) for p in batch]])
+        _upload_batch(tag, repo, batch, log, reciter.slug)
         log(f"[{reciter.slug}] uploaded {min(i + BATCH, len(todo))}/{len(todo)}")
     return tag
+
+
+def _upload_batch(tag: str, repo: str, batch: List[Path], log: Log, slug: str, attempts: int = 4) -> None:
+    """Upload one batch with retries. --clobber makes a retry safe when the
+    failed attempt landed only part of the batch. The real gh error is printed,
+    not swallowed."""
+    last = None
+    for attempt in range(1, attempts + 1):
+        res = _gh(["release", "upload", tag, "-R", repo, "--clobber", *[str(p) for p in batch]], check=False)
+        if res.returncode == 0:
+            return
+        last = res
+        detail = (res.stderr or res.stdout or "").strip()
+        log(f"[{slug}] upload attempt {attempt}/{attempts} failed: {detail[:400]}")
+        time.sleep(15 * attempt)
+    raise SystemExit(f"[{slug}] upload failed after {attempts} attempts; last gh error:\n" + ((last.stderr or last.stdout or "").strip()))
